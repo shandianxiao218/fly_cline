@@ -1,55 +1,473 @@
-# Prerequisites
-*.d
+# 卫星信号可见性计算软件 - Git忽略文件
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# 依赖文件
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# 运行时文件
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+output/
+uploads/
+backups/
 
-# Precompiled Headers
-*.gch
-*.pch
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# 构建文件
+dist/
+build/
+coverage/
+.nyc_output/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 测试文件
+test-results/
+test-reports/
+junit.xml
+
+# 缓存文件
+.cache/
+.parcel-cache/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 配置文件（敏感信息）
+config/local.js
+config/production.js
+config/development.js
+
+# 证书文件
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 文档生成文件
+docs/api/
+docs/build/
+
+# 性能分析文件
+*.prof
+*.cpuprofile
+*.heapdump
+
+# 临时文件
+.tmp/
+.temp/
+.cache/
+
+# 包管理器文件
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 部署文件
+.deploy/
+.serverless/
+
+# 监控文件
+*.pid
+*.seed
+*.pid.lock
+
+# 覆盖率报告
+coverage/
+.nyc_output/
+
+# Docker文件
+.dockerignore
+
+# Kubernetes文件
+*.yaml
+*.yml
+!k8s/
+
+# Helm文件
+*.tgz
+helm/
+
+# Terraform文件
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+terraform.tfvars.json
+
+# Ansible文件
+*.retry
+inventory/
+
+# Python文件
+__pycache__/
+*.py[cod]
+*$py.class
 *.so
-*.so.*
-*.dylib
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Executables
+# Java文件
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# C/C++文件
+*.o
+*.a
+*.so
+*.dylib
+*.dll
 *.exe
 *.out
 *.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
+# Go文件
+*.test
+*.out
+*.prof
+
+# Rust文件
+*.rs.bk
 *.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# PHP文件
+*.class
+*.php
+*.phar
+*.lock
 
-# debug information files
-*.dwo
+# Ruby文件
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Node.js特定文件
+node_modules/
+jspm_packages/
+typings/
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+
+# React Native文件
+ios/
+android/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Expo文件
+expo/
+dist/
+web-build/
+
+# Next.js文件
+.next/
+out/
+
+# Nuxt.js文件
+.nuxt/
+dist/
+
+# Vue.js文件
+dist/
+
+# Angular文件
+dist/
+.angular/
+
+# Svelte文件
+build/
+.svelte-kit/
+
+# Electron文件
+dist/
+release/
+
+# UWP文件
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+Package.appx
+*.appx
+*.appxsym
+*.appxbundle
+*.pri
+
+# Windows文件
+desktop.ini
+$RECYCLE.BIN/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS文件
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux文件
+*~
+.nfs*
+
+# 备份文件
+*.bak
+*.backup
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+*.temp
+*.cache
+
+# 日志文件
+*.log
+*.logs
+
+# 配置文件
+config.json
+settings.json
+preferences.json
+
+# 数据文件
+*.data
+*.dat
+*.db
+*.sqlite
+*.sqlite3
+
+# 媒体文件
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.webp
+*.svg
+*.ico
+*.mp3
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.wav
+*.flac
+*.ogg
+*.aac
+*.m4a
+*.wma
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.txt
+*.md
+*.rtf
+*.csv
+*.json
+*.xml
+*.yaml
+*.yml
+*.toml
+*.ini
+*.cfg
+*.conf
+*.properties
+
+# 压缩文件
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+*.xz
+*.z
+*.lzma
+*.zstd
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.z
+*.tar.lzma
+*.tar.zstd
+
+# 加密文件
+*.gpg
+*.pgp
+*.asc
+*.sig
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+*.der
+*.cer
+
+# 虚拟机文件
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.vmx
+*.vmsd
+*.vmsn
+*.vmss
+*.vmem
+*.nvram
+*.vmwarevm
+*.parallels
+*.pvm
+*.pvs
+*.pvsk
+*.hdd
+*.hds
+*.sav
+*.dmp
+*.vmem
+*.vmsn
+*.vmss
+*.vram
+*.nvram
+
+# 容器文件
+*.docker
+*.container
+*.oci
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.z
+*.tar.lzma
+*.tar.zstd
+
+# 云服务文件
+.aws/
+.azure/
+.gcloud/
+.kube/
+.docker/
+.vagrant/
+.packer/
+.terraform/
+
+# 游戏文件
+*.sav
+*.save
+*.bak
+*.backup
+*.tmp
+*.temp
+*.cache
+*.log
+*.logs
+*.dat
+*.data
+*.db
+*.sqlite
+*.sqlite3
+*.cfg
+*.conf
+*.ini
+*.json
+*.xml
+*.yaml
+*.yml
+*.toml
+*.properties
+
+# 其他文件
+*.old
+*.orig
+*.rej
+*.bak
+*.backup
+*.tmp
+*.temp
+*.cache
+*.log
+*.logs
+*.dat
+*.data
+*.db
+*.sqlite
+*.sqlite3
+*.cfg
+*.conf
+*.ini
+*.json
+*.xml
+*.yaml
+*.yml
+*.toml
+*.properties
